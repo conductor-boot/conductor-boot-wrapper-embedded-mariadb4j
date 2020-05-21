@@ -37,7 +37,7 @@ logbook:
     chunk-size: 10000
   format:
     style: splunk
-  exclude: [/conductor/api/swagger-ui**,/v3/api-docs/**,/actuator/**, /swagger-ui/**]
+  exclude: [/actuator/**, /v3/api-docs/**, /swagger-ui/**, /index.html, /api/swagger.json]
   strategy: body-only-if-status-at-least
   minimum-status: 400
 

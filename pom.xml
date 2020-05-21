@@ -82,11 +82,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
 	
 	<dependencyManagement>
@@ -106,8 +101,19 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<requiresUnpack>
+						<depedency>
+							<groupId>com.netflix.conductor</groupId>
+						    <artifactId>conductor-server</artifactId>
+						    <version>${conductor.version}</version>
+						    <classifier>all</classifier>
+						</depedency>
+					</requiresUnpack>
+				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>conductor-boot-wrapper-${project.version}-default</finalName>
 	</build>
 	
 		<repositories>
