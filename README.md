@@ -14,9 +14,7 @@ The catch point being, it will be a just a wrapper which survives the purpose of
 
 Thus eliminating the need to do a completely do Guice to Spring Boot rewrite.
 
-## Build Status
-
-
+## Build Status - ![Java CI with Maven](https://github.com/conductor-boot/conductor-boot-wrapper-embedded-mariadb4j/workflows/Java%20CI%20with%20Maven/badge.svg)
 
 ## Sample application
 
