@@ -30,7 +30,7 @@ logbook:
 
 wrapper_db: mariadb4j
 
-## For PERSISTENT data - use dataDir property
+# For PERSISTENT data - use dataDir property
 mariadb4j:
   database:
     name: ${spring.datasource.name}
